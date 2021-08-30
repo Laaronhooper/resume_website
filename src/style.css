@@ -10,7 +10,6 @@
   padding: 0;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -203,4 +202,38 @@ button:active{
   margin-left: 10%;
   margin-right: 10%;
   background-color: #FFFFFF;
+}
+section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+section div a {
+  color: rgb(138, 138, 138);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container{
+  margin-top: 1rem;
+  position: relative;
+  margin-left: 2vw;
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 1vw;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 1vh; /* Add a top margin */
+  margin-bottom: 1vh; /* Bottom margin */
+  resize: vertical;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about_me > p{
+  columns: 20px;
 }
