@@ -10,6 +10,7 @@
   padding: 0;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -70,6 +71,11 @@ nav a {
 }
 
 @media only screen and (min-width: 560px) {
+  .nav {
+    display: flex;
+    justify-self: space-around;
+  }
+
   .nav .nav__toggle {
     display: none;
   }
@@ -87,6 +93,12 @@ nav a {
     justify-content: center;
   }
 }
+
+
+body{
+  background-color: rgb(235, 231, 231);
+}
+
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -108,11 +120,87 @@ h1 {
 }
 
 p {
-  padding: 4rem;
+  padding: 1rem;
 }
 
 #about {
   color: black;
 }
 
-/*# sourceMappingURL=style.css.map */
+.profile {
+  border-radius: 50%;
+}
+
+.articles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article{
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  margin: 1rem;
+  background-color: white;
+}
+
+.card > img {
+  object-fit: contain;
+  max-width: 25%;
+  height: auto; 
+}
+.h2 {
+  display: inline-block;
+}
+.card_body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 3;
+}
+
+button{
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+}
+
+button a {
+  color: white;
+}
+
+button:hover{
+  color:#ffffff;
+  border-color:#DDDDDD;
+}
+button:active{
+  color:#BBBBBB;
+  border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+  button{
+    display:block;
+    margin:0.4em auto;
+  }
+}
+
+.blog_p{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #FFFFFF;
+}
