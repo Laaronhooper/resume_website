@@ -97,7 +97,7 @@ body{
   padding-bottom: min(30%,6rem)
 }
 
-nav {
+.bottom_nav {
   background-color: var(--red-color-1);
   overflow: hidden;
   position: fixed;
@@ -108,20 +108,47 @@ nav {
   margin-top: 1rem;
 }
 
-nav ul {
+.bottom_nav ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
-nav ul li a svg {
+.bottom_nav ul li a svg {
   width: 30px;
   fill: var(--white-color-1);
   transition: .5s;
   transform-origin: 50% 50%;
 }
+
+.top_nav {
+  background-color: var(--red-color-1);
+  overflow: hidden;
+  position: static;
+  top: 0;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.top_nav ul{
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.top_nav ul a{
+  color: var(--white-color-1);
+  text-decoration: none;
+  transition: .5s;
+  transform-origin: 50% 50%;
+}
+.top_nav ul a:hover{
+  color: var(--white-color-1);
+  transform: scale(1.5);
+}
+
 /* Change the size of links on hover */
-nav ul li a svg:hover {
+.bottom_nav ul li a svg:hover {
   transform: scale(1.2);
 }
 
@@ -309,7 +336,9 @@ button:active{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: max(5%,4rem);
+}
+.works_body{
+  padding-top: max(5%,4rem); 
 }
 
 .work_title{
@@ -438,32 +467,28 @@ input[type=submit]:hover {
 }
 
 @media screen and (min-width:769px){
-  nav{
+  .bottom_nav{
     display: none;
-}
-}
+  }
+  .blog_page img{
+    max-width: min(50%,30rem);
+    margin-left: min(5%,2rem);
+  }
+  .blog_page .second_blog_bit,
+  .blog_page .third_blog_bit,
+  .blog_page .forth_blog_bit,
+  .blog_page .fifth_blog_bit{
+    display: flex;
+    align-items: center;
+  }
 
-/* nav {
-  background-color: var(--red-color-1);
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 1rem;
+  .blog_page div div{
+    padding-left: min(5%,2.5rem);
+  }
 }
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
+@media screen and (max-width:769px){
+  .top_nav{
+    display: none;
+  
 }
-
-nav ul li a svg {
-  width: 30px;
-  fill: var(--white-color-1);
-  transition: .5s;
-  transform-origin: 50% 50%;
 }
-/* Change the size of links on hover */
