@@ -1,0 +1,47 @@
+commit 6684f9d670130f32a37b4037ab995d798028bef7
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Fri Sep 3 19:41:26 2021 +1000
+
+    floating brackets removal
+
+commit 424d36e16a72ad5a97c7361f7c2ffc690c43fbde
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Fri Sep 3 19:32:24 2021 +1000
+
+    html revalidation
+
+commit 8cfd12c8ab3ebe03669f79f398339bdeb5e13255
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Thu Sep 2 22:46:08 2021 +1000
+
+    media q adjustment
+
+commit d0507920fea709f179a072c16f93873339b7e585
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Thu Sep 2 21:24:23 2021 +1000
+
+    mobile design complete
+
+commit 31fb431322e130f82037f86a1938449a54fb0427
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Thu Sep 2 16:48:45 2021 +1000
+
+    re-do of site
+
+commit 4474c8881d3d639a1ea1612ae61195cf6d750627
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Mon Aug 30 22:03:46 2021 +1000
+
+    contact page
+
+commit cfc03fb470a2c5abe00c7767996e2b8a626032a5
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Mon Aug 30 15:14:25 2021 +1000
+
+    blog posts
+
+commit 75a66cc3e9f350ac8c151202e930cc9ad557b4c6
+Author: Luke Hooper <laaronhooper@gmail.com>
+Date:   Fri Aug 27 20:42:53 2021 +1000
+
+    first commit
