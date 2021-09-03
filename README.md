@@ -12,7 +12,7 @@ Description of your portfolio website including:
 - Functionality / features:
   - The website was built from a mobile first design. With a sticky navigation panel at the bottom of the screen. Allowing ease of use for navigation between pages.
   - On larger screens navigation is near the top of the screen.
-  - 
+  - Features include fluid design through css variables, transforming elements and 
 
 
 - Sitemap:
