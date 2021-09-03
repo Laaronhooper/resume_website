@@ -92,20 +92,22 @@ select {
   --grey-color-3: #ccc;
   --white-color-2: #ffffff;
 }
-
+/* general padding far layout */
 body{
   padding-bottom: min(30%,6rem)
 }
 
+/* Bottom nav for screens below 769px */
 .bottom_nav {
   background-color: var(--red-color-1);
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   margin-top: 1rem;
+  border: var(--red-color-1);
+  z-index: 1;
 }
 
 .bottom_nav ul {
@@ -121,6 +123,12 @@ body{
   transform-origin: 50% 50%;
 }
 
+/* Change the size of links on hover */
+.bottom_nav ul li a svg:hover {
+  transform: scale(1.2);
+}
+
+/* Top navigation for screens above 769px */
 .top_nav {
   background-color: var(--red-color-1);
   overflow: hidden;
@@ -136,22 +144,23 @@ body{
   list-style: none;
   justify-content: space-around;
 }
-.top_nav ul a{
+.top_nav ul li{
   color: var(--white-color-1);
-  text-decoration: none;
   transition: .5s;
   transform-origin: 50% 50%;
 }
-.top_nav ul a:hover{
-  color: var(--white-color-1);
-  transform: scale(1.5);
-}
-
-/* Change the size of links on hover */
-.bottom_nav ul li a svg:hover {
+.top_nav ul li:hover{
   transform: scale(1.2);
 }
 
+.top_nav ul li a{
+  color: var(--white-color-1);
+  text-decoration: none;
+}
+ 
+
+
+/* Default padding for elements */
 h1,h2,p,button,a{
   padding-left: max(5px,2%);
   padding-right: max(5px,2%);
@@ -248,7 +257,6 @@ button:active{
   color: var(--white-color-1);
 }
 
-
 .third_features{
   background-color: var(--red-color-1);
   color: var(--white-color-1);
@@ -337,12 +345,10 @@ button:active{
   flex-direction: column;
   align-items: center;
 }
-.works_body{
-  padding-top: max(5%,4rem); 
-}
 
 .work_title{
   background-color: var(--white-color-1);
+  padding-top: max(5%,4rem);
 }
 
 .timeline{
@@ -485,6 +491,10 @@ input[type=submit]:hover {
   .blog_page div div{
     padding-left: min(5%,2.5rem);
   }
+}
+
+.blog_p{
+  margin: min(10%,4rem);
 }
 @media screen and (max-width:769px){
   .top_nav{
