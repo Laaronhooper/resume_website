@@ -10,10 +10,14 @@ Description of your portfolio website including:
   - The purpose of this repositry is to cut my teeth on HTML and CSS. It is a portfolio project that is within my course at Coder Academy.
 
 - Functionality / features:
-  - The website was built from a mobile first design. 
+  - The website was built from a mobile first design. With a sticky navigation panel at the bottom of the screen. Allowing ease of use for navigation between pages.
+  - On larger screens navigation is near the top of the screen.
+  - 
 
 
 - Sitemap:
+  - src
+    - static
 
 
 - Screenshots:
